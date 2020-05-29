@@ -22,6 +22,7 @@ HOME PAGE
 
 Attribute Information:
 Bank client data:
+
     Age (numeric)
     Job : type of job (categorical: 'admin.', 'blue-collar', 'entrepreneur', 'housemaid', 'management', 'retired', 'self-employed', 'services', 'student', 'technician', 'unemployed', 'unknown')
     Marital : marital status (categorical: 'divorced', 'married', 'single', 'unknown' ; note: 'divorced' means divorced or widowed)
@@ -29,6 +30,7 @@ Bank client data:
     Default: has credit in default? (categorical: 'no', 'yes', 'unknown')
     Housing: has housing loan? (categorical: 'no', 'yes', 'unknown')
     Loan: has personal loan? (categorical: 'no', 'yes', 'unknown')
+
 
 Related with the last contact of the current campaign:
     Contact: contact communication type (categorical: 'cellular','telephone')
