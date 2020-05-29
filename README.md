@@ -18,7 +18,7 @@ Final decision for this classification model is Random Forest Classifier
 APPS
 ---
 HOME PAGE
-![](https://github.com/hilmanmakarim/Project-Model/blob/master/gallery/home.png)
+![](https://github.com/hilmanmakarim/Project-Model/blob/master/gallery/Home.PNG)
 
 Attribute Information:
 Bank client data:
@@ -52,6 +52,6 @@ Output variable (desired target):
 PREDICTION RESULT
 ---
 Customer will create new term deposit
-![](https://github.com/hilmanmakarim/Project-Model/blob/master/gallery/resultyes.png)
+![](https://github.com/hilmanmakarim/Project-Model/blob/master/gallery/resultyes.PNG)
 Customer will not create a new term deposit
-![](https://github.com/hilmanmakarim/Project-Model/blob/master/gallery/resultnot.png)
+![](https://github.com/hilmanmakarim/Project-Model/blob/master/gallery/resultnot.PNG)
