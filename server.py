@@ -504,5 +504,5 @@ def result():
 
 
 if __name__ == "__main__":
-    modelrf = joblib.load("modelFix")
+    modelrf = joblib.load("model")
     app.run(debug=True, port=4000)
