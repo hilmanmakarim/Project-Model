@@ -33,6 +33,7 @@ Bank client data:
 
 
 Related with the last contact of the current campaign:
+
     Contact: contact communication type (categorical: 'cellular','telephone')
     Month: last contact month of year (categorical: 'jan', 'feb', 'mar', ..., 'nov', 'dec')
     Day_of_week: last contact day of the week (categorical: 'mon','tue','wed','thu','fri')
