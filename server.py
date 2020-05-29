@@ -489,10 +489,10 @@ def result():
         pred_proba = modelrf.predict_proba([feature])
         
         if pred == 0:
-            endresult = f"{round(pred_proba.max()*100)}% {'NOT Accept the Offer'}"
+            endresult = f"{round(pred_proba.max()*100)}% {'so Customer will NOT create term deposit'}"
             col = 'red'
         else:
-            endresult = f"{round(pred_proba.max()*100)}% {'Customer will Accept the Offer'}"
+            endresult = f"{round(pred_proba.max()*100)}% {'so Customer will create term deposit'}"
             col = 'green'
         
         return render_template('result.html', 
