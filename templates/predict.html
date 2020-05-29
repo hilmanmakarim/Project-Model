@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Term Deposit</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: slategrey;
+            overflow: hidden;
+        }  
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Active/current link */
+        .navbar a.active {
+            background-color: #666;
+            color: white;
+        }    
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+        body {
+            background-color: rgb(green);
+            font-family: Segoe UI;
+            text-align: center;
+            vertical-align: middle
+        }
+        form {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            vertical-align: middle        
+        }
+        .col-md-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:100%}
+        .col-md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%}
+        .col-md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%}
+        .col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}
+        .col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}
+        .col-md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}
+        .col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}
+        .col-md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}
+        .col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}
+        .col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}
+        .col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}
+        .col-md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%}
+        </style>
+    </head>
+<body>
+    <div class="header">
+        <h1>Term Deposit Bank Generator</h1>
+        <p>A <b>responsive</b> website created by me to fullfill the Project for Purwadhika.</p>
+    </div>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:4000/about">About</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+<center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form method="POST" action="http://localhost:4000/result">
+        <br>
+        <div class="col">
+            <div class="form-group">
+                 
+                <label>Age</label>
+                <input type="number"  class="form-control" id="AI" name="AppIn" placeholder="Enter your age" min="18" max="100"> 
+                <br>
+
+                <label>Balance (US $)</label>
+                <input type="number"  class="form-control" id="AI" name="AppIn" placeholder="Enter your balance (limit :100000)" min="1" max="100000"> 
+                <br>
+               
+                <label>Duration</label>
+                <input type="number" class="form-control" id="CoI" name="CoIn" step="0.1" placeholder="Last Contact Your Duuration (1-5000" min="1" max="5000"> 
+                <br>
+
+                <label>Campaign)</label>
+                <input type="number"  class="form-control" id="AI" name="AppIn" placeholder="How many have you been contact this (1-100)"  min="1" max="100"> 
+                <br>
+
+            </div>
+        </div>
+            <div class="form-row" style="width: 750px">
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="Job">Job :</label>
+                <select name="Job" class="form-control">
+                    <option value="Admin">Admin</option>
+                    <option value="Blue-Collar">Blue-Collar</option>
+                    <option value="Entrepreneur">Entrepreneur</option>
+                    <option value="Housemaid">Housemaid</option>
+                    <option value="Management">Management</option>
+                    <option value="Retired">Retired</option>
+                    <option value="Self Employed">Self-Employed</option>
+                    <option value="Services">Services</option>
+                    <option value="Student">Student</option>
+                    <option value="Technician">Technician</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Other">Other</option>
+                </select>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="marital">Marital :</label>
+                <select name="Marital" class="form-control">
+                    <option value="Divorced">Divorced</option>
+                    <option value="Married">Married</option>
+                    <option value="Single">Single</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="education">Education :</label>
+                <select name="education" class="form-control">
+                    <option value="Primary">Primary</option>
+                    <option value="Secondary">Secondary</option>
+                    <option value="Tertiary">Tertiary</option>
+                    <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="default">Has Credit Card(s) :</label>
+                <select name="default" class="form-control">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="housing">Housing :</label>
+                <select name="Housing" class="form-control">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="loan">Loan :</label>
+                <select name="Loan" class="form-control">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="contact">Contact :</label>
+                <select name="Contact" class="form-control">
+                    <option value="Cellular">Cellular</option>
+                    <option value="Telephone">Telephone</option>
+                    <option value="Unknown">Unknown</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 150px" required="required">
+                <label for="Month">Month :</label>
+                <select name="Month" class="form-control">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+        <br>
+        <br>
+        <button type="submit" style="background-color:navy; color: whitesmoke; width: 1000px"
+        class="btn btn-info">Submit</button>
+    </form>
+</center>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"></script>
+</body>
+</html>
