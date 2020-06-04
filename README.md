@@ -36,7 +36,6 @@ Related with the last contact of the current campaign:
 
     Contact: contact communication type (categorical: 'cellular','telephone')
     Month: last contact month of year (categorical: 'jan', 'feb', 'mar', ..., 'nov', 'dec')
-    Day_of_week: last contact day of the week (categorical: 'mon','tue','wed','thu','fri')
     Duration: last contact duration, in seconds (numeric). Important note: this attribute highly affects the output target (e.g., if duration=0 then y='no'). Yet, the duration is not known before a call is performed. Also, after the end of the call y is obviously known. Thus, this input should only be included for benchmark purposes and should be discarded if the intention is to have a realistic predictive model.
 
 Other attributes:
